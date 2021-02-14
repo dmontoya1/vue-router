@@ -3,6 +3,7 @@ import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import Contact from '../views/Contact.vue'
 import Game from '../views/Game.vue'
+import Error404 from '../views/Error404.vue'
 
 const routes = [
   {
@@ -23,6 +24,10 @@ const routes = [
   {
     path: '/xbox/:name',
     component: Game
+  },
+  {
+    path: '/:catchAll(.*)',
+    component: Error404
   }
 ]
 
